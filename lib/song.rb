@@ -18,7 +18,7 @@ class Song
     @@genres
   end
   def self.artists
-    @@artists
+    arr = @@artists.uniq
   end
 
 end
