@@ -8,7 +8,7 @@ class Song
     if !@@genres.include?(genre)
       @@genres << genre
     end
-    @@artists << artist 
+    @@artists << artist
   end
   def count
     @@count
