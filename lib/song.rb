@@ -31,5 +31,15 @@ class Song
     end
     obj
   end
-  
+
+  def self.artist_count
+    obj = {}
+    @@artists.each do |para|
+      if obj[para] == nil
+        obj[para] = 0
+      end
+      obj[para] += 1
+    end
+    obj
+  end
 end
