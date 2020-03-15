@@ -3,7 +3,10 @@ class Song
   @@count = 0
   @@artists = []
   @@genres = []
-  def initialize(name, artist, genre)
+  def initialize(a, b, c)
+    name = a
+    artist = b 
+    genre = c
     @@count += 1
     if !@@genres.include?(genre)
       @@genres << genre
