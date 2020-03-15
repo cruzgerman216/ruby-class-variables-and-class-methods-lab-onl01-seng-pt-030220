@@ -29,5 +29,7 @@ class Song
       end
       obj[para] += 1
     end
+    obj
   end
+  
 end
