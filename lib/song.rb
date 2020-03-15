@@ -15,7 +15,7 @@ class Song
     @@count
   end
   def self.genres
-    @@genres
+    arr =@@genres.uniq
   end
   def self.artists
     arr = @@artists.uniq
