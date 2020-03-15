@@ -1,5 +1,5 @@
 class Song
-  attr_accessor :color, :size, :material, :condition
+  attr_accessor :name, :artist, :material, :condition
   @@count = 0
   @@artists = []
   @@genres = []
@@ -8,6 +8,7 @@ class Song
     if !@@genres.include?(genre)
       @@genres << genre
     end
+    @@artists << artist 
   end
   def count
     @@count
