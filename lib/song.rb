@@ -21,4 +21,13 @@ class Song
     arr = @@artists.uniq
   end
 
+  def self.genre_count
+    obj = {}
+    @@genres.each do |para|
+      if obj[para] == nil
+        obj[para] = 0
+      end
+      obj[para] += 1
+    end
+  end
 end
